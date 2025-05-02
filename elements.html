@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Shubham Thigale Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="#footer" class="logo scrolly">Lets Connect</a>
+				</header>
+				
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li class="active"><a href="elements.html">Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/shubham-thigale/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.kaggle.com/work/overview" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+							<li><a href="https://github.com/Shubham-Thigale" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h2>My Professional Resume</h2>
+								</header>
+								
+
+								
+								<head>
+									<style>
+										.resume-container {
+											display: flex;
+											align-items: flex-start;
+											gap: 50px;
+											flex-wrap: wrap;
+										}
+								
+										.resume-text {
+											flex: 2;
+											min-width: 300px;
+										}
+								
+										.resume-image {
+											flex: 1;
+											min-width: 300px;
+											text-align: center;
+										}
+								
+										.resume-image img {
+											width: 100%;
+											max-width: 700px;
+											height: auto;
+											object-fit: contain;
+											border-radius: 10px;
+											box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+											cursor: pointer; /* Show pointer when hovering */
+											transition: transform 0.3s;
+										}
+								
+										.resume-image img:hover {
+											transform: scale(1.02);
+										}
+								
+										.download-button {
+											margin-top: 15px;
+										}
+								
+										.download-button a {
+											display: inline-block;
+											padding: 12px 24px;
+											margin-top: 10px;
+											background-color: #343a40;
+											color: #ffffff;
+											text-decoration: none;
+											border-radius: 6px;
+											font-size: 15px;
+											font-weight: 500;
+											transition: background-color 0.3s, transform 0.2s;
+										}
+								
+										.download-button a:hover {
+											background-color: #212529;
+											transform: translateY(-2px);
+										}
+								
+										/* Lightbox overlay */
+										.lightbox {
+											display: none;
+											position: fixed;
+											z-index: 9999;
+											top: 0;
+											left: 0;
+											width: 100%;
+											height: 100%;
+											background: rgba(0,0,0,0.8);
+											justify-content: center;
+											align-items: center;
+										}
+								
+										.lightbox img {
+											max-width: 90%;
+											max-height: 90%;
+											border-radius: 10px;
+										}
+								
+										@media (max-width: 768px) {
+											.resume-container {
+												flex-direction: column;
+												align-items: center;
+											}
+											.resume-image img {
+												max-width: 95%;
+											}
+										}
+									</style>
+								</head>
+								
+								<body>
+									
+								
+									<div class="resume-container">
+										<div class="resume-text">
+											<h3>Data Science &amp; Analytics Background with Expertise In</h3>
+								
+											<div class="skills-list">
+												<div><li><b><span>Data Analysis & Visualization:</b></span> Power BI, Tableau, Excel, R, Python (pandas, numpy, scikit-learn, tensorflow, matplotlib, seaborn)</div></li>
+												<div><li><b><span>Database & Automation:</b></span> MS SQL Server, MySQL, MongoDB, Python scripting, ETL pipelines</div></li>
+												<div><li><b><span>Machine Learning & AI:</b></span> Regression, Classification, Clustering, Time Series Analysis</div></li>
+												<div><li><b><span>Business Tools & Cloud:</b></span> AWS, Azure, Google Sheets API, Excel Automation, Cloud Storage</div></li>
+												<div><li><b><span>Soft Skills:</b></span> Requirement Gathering, Stakeholder Communication, Agile & Scrum</div></li>
+											</div>
+
+											<p></p>
+								
+											<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+												<p style="max-width: 800px;">With hands-on experience delivering insights through dashboards, streamlining data workflows, and contributing to decision-making processes, my portfolio showcases projects that merge technical depth with business value — from automated reporting systems to market analysis for product strategy.</p>
+											</div>
+										</div>
+										<div class="resume-image">
+											<img src="images/resume.jpg" alt="Resume Preview" id="resumeImage">
+											<div class="download-button">
+												<a href="pdf/Shubham_Thigale_Resume.pdf" download>Download Full Resume (PDF)</a>
+											</div>
+										</div>
+									</div>
+								
+									<!-- Lightbox Modal -->
+									<div class="lightbox" id="lightbox">
+										<img src="images/resume.jpg" alt="Resume Full View">
+									</div>
+								
+									<script>
+										const resumeImage = document.getElementById('resumeImage');
+										const lightbox = document.getElementById('lightbox');
+								
+										resumeImage.addEventListener('click', function() {
+											lightbox.style.display = 'flex';
+										});
+								
+										lightbox.addEventListener('click', function() {
+											lightbox.style.display = 'none';
+										});
+									</script>
+								
+									<hr />
+								</body>
+								
+								
+
+							</section>
+
+							
+
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split style1">
+						<section>
+							<h2>Want to know more?</h2>
+							<p><b>I am ready to relocate for exciting opportunities.  Feel free to reach out to me for any queries, opportunities or collaborations.</b></p>
+							<ul class="actions">
+								<li><a href="mailto:shubham.thigale13@gmail.com" class="button">Get in Touch</a></li>
+							</ul>
+						</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p><b>Pune,  Maharashtra,  India</b></p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><b><a href="#">(+91) 9130008489</a></b></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><b><a href="mailto:shubham.thigale13@gmail.com">shubham.thigale13@gmail.com</a></b></p>
+						</section>
+
+						<section>
+							<h3>Socials</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/shubham-thigale/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.kaggle.com/work/overview" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+								<li><a href="https://github.com/Shubham-Thigale" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Shubham Thigale</li><li>All Rights Reserved</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
